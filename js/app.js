@@ -75,5 +75,5 @@ $(".console").terminal({
 }, {
 	greetings: "Welcome on kelunik.com\n\nJust type what you're looking for. Tab completion is available.\n",
 	name: "kelunik.com",
-	prompt: "	$ "
+	prompt: "$ "
 });
