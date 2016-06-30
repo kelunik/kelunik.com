@@ -1,0 +1,16 @@
+body { margin: 0; }
+
+#app { width: 100vw; height: 100vh; background: #1c2b30; display: flex; align-items: center; justify-content: center; }
+
+.console { background: rgba(0,0,0,.1) !important; width: 80vw; height: 80vh; border-radius: 2px; font-family: "Source Code Pro", monospace; font-size: 16px; color: white; padding: 15px; }
+
+.terminal, .cmd { font-size: 16px; color: white; font-family: "Source Code Pro", monospace; background-color: transparent; line-height: 22px; }
+.cmd { height: auto; }
+.terminal-output div div { line-height: 22px !important; }
+.cmd .prompt { line-height: 22px; }
+.cursor { background-color: transparent; color: white; }
+
+@keyframes terminal-blink {
+	0%, 100% { background-color: transparent; color: white; }
+	50% { background-color: white; color: #1c2b30; }
+}
