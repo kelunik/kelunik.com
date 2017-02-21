@@ -12,7 +12,7 @@ $(".console").terminal({
 			this.echo(btoa(str).replace(/\+/g, "-").replace(/\//g, "_").replace(/=/g, ""));
 		},
 		decode: function (str) {
-			this.echo(atob(str).replace(/-/g, "+").replace(/_/g, "/"));
+			this.echo(atob(str.replace(/-/g, "+").replace(/_/g, "/")));
 		}
 	},
 	blog: function () {
