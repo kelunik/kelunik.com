@@ -56,7 +56,7 @@ $(".console").terminal({
 
 				var diff = then - now;
 
-				term.echo("Only " + diff.getDate() + " days, " + diff.getHours() + " hours and " + diff.getMinutes() + " minutes left until Rebeccaday, OMG!");
+				this.echo("Only " + diff.getDate() + " days, " + diff.getHours() + " hours and " + diff.getMinutes() + " minutes left until Rebeccaday, OMG!");
 				break;
 		}
 	},
