@@ -55,8 +55,9 @@ $(".console").terminal({
 				then.setDate(now.getDate() + (7 + 5 - now.getDay()) % 7);
 
 				var diff = then - now;
+				var days = Math.ceil((then.getTime() - now.getTime()) / (1000 * 60 * 60 * 24));
 
-				this.echo("Only " + diff.getDate() + " days, " + diff.getHours() + " hours and " + diff.getMinutes() + " minutes left until Rebeccaday, OMG!");
+				this.echo("Only " + days + " days, " + diff.getHours() + " hours and " + diff.getMinutes() + " minutes left until Rebeccaday, OMG!");
 				break;
 		}
 	},
